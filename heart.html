@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lis Heart</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #1a1a1a;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            color: #00ffff;
+            margin-bottom: 20px;
+            font-size: 28px;
+            text-shadow: 0 0 10px #00ffff;
+        }
+
+        canvas {
+            background-color: black;
+            border: 3px solid #00ffff;
+            border-radius: 5px;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+        }
+
+        .controls {
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #00ffff;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #00cccc;
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        .info {
+            color: #00ffff;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>❤️ Feliz 3 meses!</h1>
+        <canvas id="canvas" width="600" height="600"></canvas>
+        <div class="controls">
+            <button onclick="desenharCoracao()">Desenhar</button>
+            <button onclick="limparCanvas()">Limpar</button>
+            <button onclick="toggleAnimacao()">Iniciar Animação</button>
+        </div>
+        <div class="info">
+            <p>Desenho feito com Canvas HTML5 e JavaScript</p>
+        </div>
+    </div>
+
+    <script src="heart.js"></script>
+</body>
+</html>
